@@ -11,7 +11,7 @@ const portraits = [
   { id: 3, name: 'Sofia Rodriguez', role: 'Recording Artist', image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80' },
   { id: 4, name: 'James Thompson', role: 'Author & Speaker', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80' },
   { id: 5, name: 'Emily Park', role: 'Fashion Designer', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80' },
-  { id: 6, name: 'David Kim', role: 'Tech Entrepreneur', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80' },
+  { id: 6, name: 'David Kim', role: 'Tech Entrepreneur', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80' },
   { id: 7, name: 'Olivia Martinez', role: 'Actress', image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80' },
   { id: 8, name: 'Michael Brown', role: 'Investment Partner', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80' },
 ];
