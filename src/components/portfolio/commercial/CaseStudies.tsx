@@ -26,11 +26,11 @@ const caseStudies = [
   },
   {
     id: 3,
-    client: 'Apple',
-    campaign: 'iPhone Pro',
+    client: 'Sony',
+    campaign: 'Alpha Camera',
     challenge: 'Showcase camera capabilities through stunning visual storytelling.',
     results: ['Global billboard campaign', '2.1B impressions', 'Emmy nomination'],
-    image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1200&q=80',
     year: '2023',
   },
   {

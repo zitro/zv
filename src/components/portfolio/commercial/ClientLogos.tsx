@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { FadeIn } from '@/components/ui/FadeIn';
 
 const clients = [
-  'Nike', 'Mercedes-Benz', 'Apple', 'Chanel', 'Louis Vuitton', 'BMW',
+  'Nike', 'Mercedes-Benz', 'Sony', 'Chanel', 'Louis Vuitton', 'BMW',
   'Gucci', 'Porsche', 'Dior', 'Prada', 'Cartier', 'Rolex',
   'Hermès', 'Burberry', 'Valentino', 'Versace', 'Fendi', 'Balenciaga',
 ];

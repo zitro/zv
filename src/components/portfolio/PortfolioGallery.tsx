@@ -88,8 +88,8 @@ const portfolioItems = [
   {
     id: 11,
     category: 'commercial',
-    title: 'Apple Product Launch',
-    image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80',
+    title: 'Sony Alpha Launch',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80',
     aspectRatio: '16/9',
   },
   {

@@ -29,9 +29,9 @@ const galleryItems = [
   },
   {
     id: 4,
-    title: 'Apple iPhone Pro',
+    title: 'Sony Alpha Camera',
     category: 'Technology',
-    image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80',
     size: 'large',
   },
   {

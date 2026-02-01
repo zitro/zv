@@ -9,7 +9,7 @@ const categories = ['All', 'Luxury', 'Tech', 'Beauty', 'Food', 'Fashion'];
 
 const products = [
   { id: 1, title: 'Rolex Submariner', category: 'Luxury', image: 'https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800&q=80' },
-  { id: 2, title: 'iPhone Pro', category: 'Tech', image: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80' },
+  { id: 2, title: 'Sony Alpha', category: 'Tech', image: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80' },
   { id: 3, title: 'Chanel Perfume', category: 'Beauty', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80' },
   { id: 4, title: 'Artisan Coffee', category: 'Food', image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80' },
   { id: 5, title: 'Designer Handbag', category: 'Fashion', image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80' },

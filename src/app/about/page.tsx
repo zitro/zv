@@ -75,7 +75,7 @@ const values = [
 ];
 
 const clients = [
-  'Vogue', 'Nike', 'Mercedes-Benz', 'Chanel', 'Apple', 'Louis Vuitton',
+  'Vogue', 'Nike', 'Mercedes-Benz', 'Chanel', 'Sony', 'Louis Vuitton',
   'Gucci', 'BMW', 'Dior', 'Prada', 'Versace', 'Cartier',
 ];
 

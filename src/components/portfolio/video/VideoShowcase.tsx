@@ -34,10 +34,10 @@ const videos = [
   },
   {
     id: 4,
-    title: 'Apple - Shot on iPhone',
+    title: 'Sony - Alpha Series',
     category: 'Social',
     duration: '0:30',
-    thumbnail: 'https://images.unsplash.com/photo-1491933382434-500287f9b54b?w=800&q=80',
+    thumbnail: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80',
     views: '100M+',
   },
   {
