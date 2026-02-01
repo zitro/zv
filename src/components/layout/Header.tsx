@@ -51,7 +51,7 @@ export function Header() {
                 alt="Zitro Visuals"
                 width={240}
                 height={64}
-                className="h-14 w-auto object-contain md:h-16"
+                className="h-12 w-auto object-contain md:h-14"
                 priority
               />
             </motion.div>
