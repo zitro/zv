@@ -24,7 +24,7 @@ const featuredProjects = [
   },
   {
     id: 3,
-    title: 'Chanel Beauty',
+    title: 'Bobbi Brown',
     category: 'Product Photography',
     year: '2023',
     image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&q=80',
