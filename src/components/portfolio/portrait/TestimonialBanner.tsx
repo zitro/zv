@@ -17,7 +17,7 @@ export function TestimonialBanner() {
             investment in my personal brand I&apos;ve ever made.
           </blockquote>
           <div className="mt-8">
-            <p className="font-semibold text-white">Alexandra Chen</p>
+            <p className="font-semibold text-white">Alexandra C.</p>
             <p className="text-sm text-slate-400">CEO, TechVentures</p>
           </div>
         </FadeIn>

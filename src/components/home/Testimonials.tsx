@@ -10,7 +10,7 @@ const testimonials = [
     id: 1,
     quote:
       'Zitro Visuals elevated our brand to new heights. Their attention to detail and creative vision exceeded all expectations.',
-    author: 'Sarah Chen',
+    author: 'Sarah C.',
     role: 'Creative Director, Nike',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80',
   },
@@ -18,7 +18,7 @@ const testimonials = [
     id: 2,
     quote:
       'Working with Zitro was transformative. They understood our vision and brought it to life in ways we never imagined possible.',
-    author: 'Marcus Williams',
+    author: 'Marcus W.',
     role: 'Brand Manager, Mercedes-Benz',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80',
   },
@@ -26,7 +26,7 @@ const testimonials = [
     id: 3,
     quote:
       'The team\'s professionalism and artistic excellence made them our go-to partner for all major campaigns.',
-    author: 'Emma Thompson',
+    author: 'Emma T.',
     role: 'Editor-in-Chief, Vogue Italia',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80',
   },
