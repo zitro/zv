@@ -38,8 +38,8 @@ const editorials = [
     id: 5,
     title: 'Street Luxe',
     designer: 'Off-White',
-    model: 'Adut A.',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80',
+    model: 'Naomi C.',
+    image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=1200&q=80',
   },
 ];
 
