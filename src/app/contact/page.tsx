@@ -27,8 +27,8 @@ const contactInfo = [
   },
   {
     title: 'Phone',
-    value: '+1 (234) 567-890',
-    href: 'tel:+1234567890',
+    value: '1-800-250-3814',
+    href: 'tel:+18002503814',
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path

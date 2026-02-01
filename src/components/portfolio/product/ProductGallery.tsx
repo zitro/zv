@@ -19,7 +19,7 @@ const products = [
   { id: 9, title: 'Diamond Ring', category: 'Luxury', image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80' },
   { id: 10, title: 'Headphones', category: 'Tech', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=80' },
   { id: 11, title: 'Sneakers', category: 'Fashion', image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80' },
-  { id: 12, title: 'Champagne', category: 'Food', image: 'https://images.unsplash.com/photo-1547595628-c61a32bc6ef4?w=800&q=80' },
+  { id: 12, title: 'Champagne', category: 'Food', image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80' },
 ];
 
 export function ProductGallery() {
