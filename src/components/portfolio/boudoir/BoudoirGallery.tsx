@@ -6,14 +6,14 @@ import Image from 'next/image';
 import { FadeIn } from '@/components/ui/FadeIn';
 
 const images = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1616091216791-a5360a5fe084?w=800&q=80', style: 'Classic' },
-  { id: 2, image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80', style: 'Artistic' },
-  { id: 3, image: 'https://images.unsplash.com/photo-1618721405821-80ebc4b63d26?w=800&q=80', style: 'Romantic' },
-  { id: 4, image: 'https://images.unsplash.com/photo-1622495966027-e0173192c728?w=800&q=80', style: 'Elegant' },
-  { id: 5, image: 'https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&q=80', style: 'Bold' },
-  { id: 6, image: 'https://images.unsplash.com/photo-1512484457149-266d165a4eca?w=800&q=80', style: 'Sensual' },
-  { id: 7, image: 'https://images.unsplash.com/photo-1502767882403-636aee14f873?w=800&q=80', style: 'Intimate' },
-  { id: 8, image: 'https://images.unsplash.com/photo-1523264653568-d3d4032d1476?w=800&q=80', style: 'Sultry' },
+  { id: 1, image: 'https://images.unsplash.com/photo-1502767882403-636aee14f873?w=800&q=80', style: 'Aquatic' },
+  { id: 2, image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&q=80', style: 'Wet Look' },
+  { id: 3, image: 'https://images.unsplash.com/photo-1524502397800-2eeaad7c3fe5?w=800&q=80', style: 'Pool' },
+  { id: 4, image: 'https://images.unsplash.com/photo-1541795083-1b160cf4f3d7?w=800&q=80', style: 'Sensual' },
+  { id: 5, image: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80', style: 'Artistic' },
+  { id: 6, image: 'https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda?w=800&q=80', style: 'Sultry' },
+  { id: 7, image: 'https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=800&q=80', style: 'Intimate' },
+  { id: 8, image: 'https://images.unsplash.com/photo-1520013225999-70a350476e80?w=800&q=80', style: 'Bath' },
 ];
 
 export function BoudoirGallery() {
