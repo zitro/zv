@@ -11,7 +11,7 @@ export function BoudoirHero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1559070169-a3077159ee16?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1616091216791-a5360a5fe084?w=1920&q=80"
           alt="Boudoir photography"
           fill
           className="object-cover opacity-20"
