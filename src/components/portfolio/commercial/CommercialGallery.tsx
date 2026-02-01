@@ -57,7 +57,7 @@ const galleryItems = [
   },
   {
     id: 8,
-    title: 'Louis Vuitton',
+    title: 'Gucci',
     category: 'Fashion',
     image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80',
     size: 'small',
