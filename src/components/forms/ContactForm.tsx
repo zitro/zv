@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
 
 const projectTypes = [
   'Commercial',
@@ -24,16 +25,53 @@ export function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const turnstileRef = useRef<TurnstileInstance>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
+
+    if (!turnstileToken) {
+      setError('Please complete the verification.');
+      return;
+    }
+
+    if (!formState.projectType) {
+      setError('Please select a project type.');
+      return;
+    }
+
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formState,
+          turnstileToken,
+        }),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong');
+      }
+
+      setIsSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong');
+      // Reset Turnstile on error
+      turnstileRef.current?.reset();
+      setTurnstileToken(null);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -67,6 +105,7 @@ export function ContactForm() {
         <button
           onClick={() => {
             setIsSubmitted(false);
+            setTurnstileToken(null);
             setFormState({
               name: '',
               email: '',
@@ -92,6 +131,12 @@ export function ContactForm() {
       <p className="mt-2 text-sm text-slate-400">
         Tell us about your vision and we&apos;ll make it happen.
       </p>
+
+      {error && (
+        <div className="mt-4 rounded-lg bg-red-500/10 p-4 text-sm text-red-400">
+          {error}
+        </div>
+      )}
 
       <div className="mt-8 space-y-6">
         {/* Name & Email */}
@@ -234,10 +279,24 @@ export function ContactForm() {
           />
         </div>
 
+        {/* Turnstile */}
+        <div className="flex justify-center">
+          <Turnstile
+            ref={turnstileRef}
+            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''}
+            onSuccess={setTurnstileToken}
+            onError={() => setTurnstileToken(null)}
+            onExpire={() => setTurnstileToken(null)}
+            options={{
+              theme: 'dark',
+            }}
+          />
+        </div>
+
         {/* Submit */}
         <motion.button
           type="submit"
-          disabled={isSubmitting}
+          disabled={isSubmitting || !turnstileToken}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           className="w-full rounded-lg bg-zitro-500 px-6 py-4 font-semibold text-slate-950 transition-all hover:bg-zitro-400 disabled:cursor-not-allowed disabled:opacity-50"
